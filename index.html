@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Портфолио — Asankan</title>
+  <style>
+    :root { --bg:#0f1020; --card:#16172b; --text:#e9e9f1; --muted:#a8a8c7; --accent:#7c5cff; }
+    * { box-sizing:border-box }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Arial; color:var(--text); background: radial-gradient(1200px 600px at 80% -10%, #1f2050 0%, transparent 60%) , var(--bg); }
+    a{ color:var(--accent); text-decoration:none } a:hover{ text-decoration:underline }
+    header { padding:56px 20px; text-align:center; }
+    header h1{ margin:0 0 8px; font-size:34px; letter-spacing:.3px }
+    header p{ margin:0; color:var(--muted) }
+    .wrap { max-width:980px; margin:0 auto; padding:28px 20px 60px }
+    .grid { display:grid; gap:18px; grid-template-columns: 1fr; }
+    @media (min-width:720px){ .grid{ grid-template-columns: repeat(2, 1fr) } }
+    .card { background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)); border:1px solid rgba(255,255,255,.07); border-radius:14px; padding:18px 18px; backdrop-filter:saturate(120%) blur(8px) }
+    .title{ display:flex; align-items:center; gap:10px; margin:0 0 8px; font-size:18px }
+    .pill{ display:inline-block; padding:2px 10px; border:1px solid rgba(255,255,255,.15); border-radius:999px; font-size:12px; color:var(--muted); margin-right:6px }
+    .skills{ display:flex; flex-wrap:wrap; gap:8px; margin-top:8px }
+    footer{ text-align:center; color:var(--muted); padding:30px 10px }
+    .btn{ display:inline-block; padding:10px 14px; border-radius:10px; background:var(--accent); color:#fff; font-weight:600 }
+    .btn:hover{ filter:brightness(1.08) }
+    .row { display:flex; gap:14px; flex-wrap:wrap }
+    .mini { font-size:14px; color:var(--muted); margin:4px 0 0 }
+    .divider{ height:1px; background:rgba(255,255,255,.08); margin:14px 0 }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Asankan — Junior Developer</h1>
+  <p>HTML/CSS/JS · немного Python · интерес к e-commerce и автоматизации</p>
+</header>
+
+<div class="wrap">
+  <!-- О себе -->
+  <section class="card">
+    <h3 class="title">👋 О себе</h3>
+    <p>Делаю простые и аккуратные веб-страницы, учусь писать скрипты для автоматизации задач.
+      Открыт к стажировкам и проектам. Люблю наводить порядок: понятные файлы, читаемый код, короткие README.</p>
+    <div class="row">
+      <a class="btn" href="mailto:asankanoverlan22@gmail.com">Написать на email</a>
+      <a class="btn" href="https://t.me/Erlafio" target="_blank">Связаться в Telegram</a>
+    </div>
+    <p class="mini">GitHub: <a href="https://github.com/asankanoverlan22-lgtm" target="_blank">github.com/asankanoverlan22-lgtm</a></p>
+  </section>
+
+  <div class="grid">
+    <!-- Навыки -->
+    <section class="card">
+      <h3 class="title">🧰 Навыки</h3>
+      <div class="skills">
+        <span class="pill">HTML5</span><span class="pill">CSS3 (адаптив)</span>
+        <span class="pill">JavaScript (базовый)</span><span class="pill">Python (скрипты)</span>
+        <span class="pill">Git & GitHub</span><span class="pill">README/Docs</span>
+      </div>
+      <div class="divider"></div>
+      <p class="mini">Сейчас изучаю: Flex/Grid, формы, fetch, основы Python CLI.</p>
+    </section>
+
+    <!-- Проект 1 -->
+    <section class="card">
+      <h3 class="title">🌐 Проект: Портфолио-сайт</h3>
+      <p>Одностраничный сайт на GitHub Pages. Адаптивная верстка, аккуратный тёмный UI, без библиотек.</p>
+      <div class="row">
+        <a class="btn" href="https://asankanoverlan22-lgtm.github.io" target="_blank">Открыть сайт</a>
+        <a class="btn" href="https://github.com/asankanoverlan22-lgtm/asankanoverlan22-lgtm.github.io" target="_blank">Код</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Проект 2 -->
+  <section class="card">
+    <h3 class="title">📝 Проект: WB Title Helper (Python CLI)</h3>
+    <p>Мини-утилита, которая по названию товара и списку фич генерирует варианты заголовков и теги под маркетплейсы.</p>
+    <pre class="mini">python wb_title_helper.py "тушь для ресниц" "объем;длина;черная;не осыпается"</pre>
+    <div class="row">
+      <a class="btn" href="https://github.com/asankanoverlan22-lgtm/wb-title-helper" target="_blank">Репозиторий</a>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="card" id="contacts">
+    <h3 class="title">📫 Контакты</h3>
+    <p>Telegram: <a href="https://t.me/Erlafio" target="_blank">@Erlafio</a></p>
+    <p>Email: <a href="mailto:asankanoverlan22@gmail.com">asankanoverlan22@gmail.com</a></p>
+    <p class="mini">Готов к тестовым задачам и стажировке.</p>
+  </section>
+</div>
+
+<footer>© 2025 Asankan</footer>
+</body>
+</html>
